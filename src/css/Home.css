@@ -53,7 +53,7 @@ nav > a {
 }
 
 .main-page {
-  background-image: url("/src/assets/mountain1.jpg");
+  background-image: url("/src/assets/home-hero.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -102,6 +102,7 @@ footer {
 
 .about > img {
   max-width: 100%;
+  display: block;
 }
 
 .about > h1 {

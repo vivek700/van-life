@@ -3,7 +3,7 @@ function About() {
   return (
     <>
       <div className="about">
-        <img src="/src/assets/van.jpg" alt="image" />
+        <img src="/src/assets/about-hero.png" alt="image" />
         <h1>Don’t squeeze in a sedan when you could relax in a van.</h1>
         <p>
           Our mission is to enliven your road trip with the perfect travel van
