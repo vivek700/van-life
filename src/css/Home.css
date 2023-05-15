@@ -7,6 +7,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* border: 1px solid red; */
 }
 
 body {
@@ -23,30 +24,27 @@ header > a {
   color: black;
 }
 header > a > h1 {
-  padding: .5em 0 .5em .52em;
+  padding: 0.5em 0 0.5em 0.52em;
   font-weight: 700;
   cursor: pointer;
   text-decoration: none;
 }
 
-
 nav {
   padding-top: 1.6rem;
+  padding-right: 0.5em;
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
 }
-
 
 nav > a {
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;
   color: black;
-  padding: 0 .5em;
+  padding: 0 0.5em;
 }
-
-
 
 .site-wrapper {
   display: flex;
@@ -140,7 +138,7 @@ footer {
 .about > section > button {
   border: none;
   border-radius: 7px;
-  padding: .8em 1.3em;
+  padding: 0.8em 1.3em;
   margin-top: 1.3rem;
   font-weight: 700;
   font-size: 15.9462px;
@@ -191,17 +189,52 @@ footer {
   transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 a:hover {
   font-weight: bold;
   text-decoration: underline;
   color: #161616;
 }
-@media (max-width: 480px) {
+@media (max-width: 345px) {
   a:hover {
     font-weight: bold;
     text-decoration: none;
     color: #161616;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  header > a {
+    margin-right: auto;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+  }
+  header > a > h1 {
+    padding: 0.5em 0 0.5em 0.52em;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  nav {
+    padding: 1em;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+  }
+
+  nav > a {
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    padding: 0 0.5em;
+  }
+
+  .main-page > button {
+    font-size: 0.6rem;
   }
 }
 
@@ -389,7 +422,7 @@ i[class*="van-type-"] {
   color: black;
 }
 .van-host-detail-outlet {
-  padding-top: .5rem;
+  padding-top: 0.5rem;
 }
 .host-van-detail-outlet-info > p {
   font-weight: bold;
@@ -403,9 +436,8 @@ i[class*="van-type-"] {
   padding-top: 1rem;
   font-weight: bold;
   font-size: 1.7rem;
-
 }
-.van-host-pricing > p >span {
+.van-host-pricing > p > span {
   font-weight: lighter;
   font-size: 1.5rem;
 }
@@ -415,5 +447,4 @@ i[class*="van-type-"] {
   height: 100px;
   border-radius: 5px;
   margin-top: 1rem;
-
 }
