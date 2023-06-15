@@ -1,7 +1,7 @@
 function About() {
   return (
     <div className="about">
-      <img src="/src/assets/about-hero.png" alt="image" loading="lazy" />
+      <img src="src/assets/about-hero.png" alt="image" loading="lazy" />
       <h1>Don’t squeeze in a sedan when you could relax in a van.</h1>
       <p>
         Our mission is to enliven your road trip with the perfect travel van
