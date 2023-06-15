@@ -11,7 +11,8 @@
 }
 
 body {
-  background-color: #fff7ed;
+  background-color: #fff0dd;
+  /* background-color: red; */
 }
 
 header {
@@ -31,7 +32,7 @@ header > a > h1 {
 }
 
 nav {
-  padding-top: 1.6rem;
+  padding-top: 1.45em;
   padding-right: 0.5em;
   font-family: "Inter";
   font-style: normal;
@@ -53,14 +54,14 @@ nav > a {
 }
 
 .main-page {
-  background-image: url("/src/assets/home-hero.png");
+  background-image: url("/src/assets/home-van-dark.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   padding: 3rem 1.5rem;
-  min-height: 400px;
   color: rgb(255, 255, 255);
   text-align: center;
+  min-height: 40vh;
 }
 
 .main-page > h1 {
@@ -92,6 +93,7 @@ nav > a {
 footer {
   background-color: #252525;
   color: #aaaaaa;
+
   padding: 1.8em 0;
   font-weight: 500;
   font-size: 14px;
@@ -99,10 +101,13 @@ footer {
   text-align: center;
   margin-top: auto;
 }
-
+.about {
+  max-width: 100ch;
+  margin: auto;
+}
 .about > img {
-  max-width: 100%;
   display: block;
+  width: 100%;
 }
 
 .about > h1 {
@@ -123,6 +128,7 @@ footer {
 
 .about > section {
   background-color: #ffcc8d;
+
   padding: 2rem 2rem;
   text-align: left;
   margin: 2rem 1.5rem;
@@ -151,11 +157,14 @@ footer {
 
 .van-list-container {
   padding-inline: 2rem;
+  max-width: 100ch;
+  margin: auto;
 }
 
 .van-list-container > h1 {
   font-size: 2.5rem;
   text-align: left;
+  padding-bottom: 0.5em;
 }
 
 .van-title img {
@@ -175,19 +184,6 @@ footer {
   justify-items: center;
   text-align: center;
   margin: 4rem 0;
-}
-
-.van-type {
-  margin-bottom: 1rem;
-  height: 34px;
-  padding: 6px 26px;
-  font-style: normal;
-  font-weight: 500;
-  border: none;
-  border-radius: 5px;
-  background-color: #ffead0;
-  color: #4d4d4d;
-  transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 a:hover {
@@ -239,6 +235,43 @@ a:hover {
   }
 }
 
+@media (min-width: 1100px) {
+  .main-page {
+    padding: 5em 1.5em;
+    min-height: 70vh;
+  }
+
+  .main-page > h1 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+
+  .main-page > p {
+    padding: 2em 0 4em 0;
+    font-size: 1.2rem;
+    line-height: 3rem;
+  }
+
+  .main-page > button {
+    padding: 1.3em 10em;
+    font-size: 1.2rem;
+  }
+}
+.van-type {
+  padding: 0.5em 1em;
+  cursor: pointer;
+  margin: 0 1em 0 0;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffead0;
+  color: #4d4d4d;
+  transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+
 .van-type:hover {
   color: #ffead0;
 }
@@ -285,16 +318,14 @@ i[class*="van-type-"] {
 
 .van-detail-container {
   padding: 27px;
+  max-width: 75ch;
+  margin: auto;
 }
 
 .van-detail-container .back-button {
   color: black;
   text-decoration: none;
 }
-
-/* .van-detail-container .back-button:visited {
-    
-} */
 
 .van-detail-container .back-button span {
   text-decoration: underline;
@@ -338,7 +369,7 @@ i[class*="van-type-"] {
   border: none;
   padding: 1rem;
   border-radius: 5px;
-  margin: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .van-info {
@@ -348,6 +379,9 @@ i[class*="van-type-"] {
 .van-detail > h2,
 .van-detail > p {
   text-align: left;
+}
+.van-detail-description {
+  max-width: 75ch;
 }
 .host-van-list-container {
   padding: 1rem 1rem;
@@ -427,6 +461,8 @@ i[class*="van-type-"] {
 }
 .host-van-detail-outlet-info > p {
   font-weight: bold;
+  max-width: 70ch;
+  letter-spacing: 0.01ch;
   padding-top: 1rem;
   line-height: 1.56rem;
 }
@@ -448,4 +484,90 @@ i[class*="van-type-"] {
   height: 100px;
   border-radius: 5px;
   margin-top: 1rem;
+}
+
+.not-found-container {
+  padding: 2em;
+  text-align: center;
+}
+
+.not-found-container > h1 {
+  margin-top: 2em;
+  text-align: left;
+}
+
+.not-found-container .link-button {
+  display: block;
+  background-color: #161616;
+  color: white;
+  text-decoration: none;
+  padding: 1em;
+  margin-top: 2em;
+  border-radius: 4px;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 27px;
+}
+.login-container > h1 {
+  margin-bottom: 1em;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+}
+
+.login-form > input {
+  border: 1px solid rgba(209, 213, 219);
+  height: 50px;
+  text-indent: 10px;
+  font-family: "Inter", sans-serif;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  font-weight: 400;
+}
+
+.login-form > input:focus {
+  outline: none;
+}
+
+.login-form > input:first-of-type {
+  border-radius: 6px 6px 0px 0px;
+}
+
+.login-form > input:last-of-type {
+  border-radius: 0px 0px 6px 6px;
+  border-top: none;
+}
+
+.login-form > button {
+  background-color: #ff8c38;
+  border: none;
+  border-radius: 6px;
+  height: 55px;
+  margin-top: 22px;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+.svg-icon > svg {
+  width: 21px;
+}
+.svg-icon {
+  vertical-align: top;
+}
+.red {
+  color: #cc0000;
+}
+.login-form > button:disabled {
+  background-color: #aaaaaa;
+  cursor: not-allowed;
+}
+.loading {
+  margin-top: 2em;
+  text-align: center;
 }
