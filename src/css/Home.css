@@ -32,8 +32,8 @@ header > a > h1 {
 }
 
 nav {
-  padding-top: 1.45em;
-  padding-right: 0.5em;
+  padding-top: 1.57em;
+  padding-right: 0.4em;
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
@@ -44,13 +44,17 @@ nav > a {
   cursor: pointer;
   text-decoration: none;
   color: black;
-  padding: 0 0.5em;
+  padding: 0 0.36em;
 }
 
 .site-wrapper {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+}
+.main-title:hover {
+  text-decoration: none;
+
 }
 
 .main-page {
@@ -79,16 +83,23 @@ nav > a {
   line-height: 24px;
 }
 
-.main-page > button {
+.main-page-link-button {
   padding: 1.15em 5em;
   font-weight: 700;
   color: white;
   font-size: 1rem;
   background-color: #ff8c38;
-  border: none;
+  text-decoration: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 300ms ease-in-out;
 }
+.main-page-link-button:hover {
+  text-decoration: none;
+  background-color: white;
+  color: #ff8c38;
+}
+
 
 footer {
   background-color: #252525;
@@ -140,19 +151,28 @@ footer {
   font-size: 24px;
   line-height: 30px;
   text-align: left;
+  margin-bottom: 1.3rem;
+
 }
 
-.about > section > button {
-  border: none;
+.about-page-link-button {
+  text-decoration: none;
   border-radius: 7px;
   padding: 0.8em 1.3em;
-  margin-top: 1.3rem;
   font-weight: 700;
   font-size: 15.9462px;
   line-height: 24px;
   background-color: black;
   color: white;
   cursor: pointer;
+  transition: color 300ms ease-in-out;
+}
+
+.about-page-link-button:hover {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  
 }
 
 .van-list-container {

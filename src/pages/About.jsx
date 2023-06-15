@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 function About() {
   return (
     <div className="about">
@@ -19,7 +20,7 @@ function About() {
           Your destination is waiting. <br />
           Your van is ready.
         </h2>
-        <button>Explore our vans</button>
+        <Link className="about-page-link-button" to = "/vans">Explore our vans</Link>
       </section>
     </div>
   )
