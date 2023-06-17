@@ -58,7 +58,7 @@ nav > a {
 }
 
 .main-page {
-  background-image: url("/src/assets/home-van-dark.jpg");
+  background-image: url("/assets/home-van-dark.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
